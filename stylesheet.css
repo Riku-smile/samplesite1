@@ -1,0 +1,9 @@
+#header{
+  background-image: url("images/headerbg.png");
+}
+
+#section-header{
+  background-image: url("images/mainbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

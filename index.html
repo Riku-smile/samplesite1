@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>バスケクラブ</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="header" class="flex flex-col lg:flex-row justify-around w-full">
+      <div id="logo" class="flex items-center mx-auto lg:mx-0">
+        <img src="images/logo.png" alt="logo" height="100" width="100">
+        <h1 class="text-2xl">バスケクラブ</h1>
+      </div>
+      <nav id="toggle" class="hidden lg:flex items-center lg:bg-transparent">
+        <ul class="flex flex-col lg:flex-row mx-auto">
+          <li class="text-center py-4 mx-4 hover:underline"><a href="#day" class="text-lg">活動日</a></li>
+          <li class="text-center py-4 mx-4 hover:underline"><a href="#place" class="text-lg">活動場所</a></li>
+          <li class="text-center py-4 mx-4 hover:underline"><a href="#condition" class="text-lg">参加条件</a></li>
+          <li class="text-center py-4 mx-4 hover:underline"><a href="#form" class="text-lg">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mx-auto">
+      <article class="">
+        <header id="section-header" class="flex items-center justify-center h-screen">
+          <p class="text-4xl font-bold">One for All.<br>
+          All for One.</p>
+        </header>
+        <!-- 活動日 -->
+        <section id="day" class="container mx-auto my-4">
+          <h2 class="text-2xl text-center font-semibold border-b-2 border-dashed">活動日</h2>
+          <div class="flex flex-col lg:flex-row">
+            <div class="w-auto lg:w-1/2 m-8">
+              <img src="images/schedule.png" alt="schedule" class="w-full">
+            </div>
+            <div class="w-auto lg:w-1/2 m-8 p-4 bg-gray-200 border-black border-4 border-solid rounded">
+              <h3 class="text-lg text-center font-bold font-mono border-b-2 border-dashed">Point!</h3>
+              <p class="text-md">水・土・日の１９時から２１時まで地域のスポーツセンターや地区センターを利用して活動しています♪</p>
+            </div>
+          </div>
+        </section>
+        <!-- 活動場所 -->
+        <section id="place" class="container mx-auto my-4">
+          <h2 class="text-2xl text-center font-semibold border-b-2 border-dashed">活動場所</h2>
+          <div class="flex flex-col lg:flex-row">
+            <!-- Google マップ埋め込み -->
+            <div class="w-auto lg:w-1/2 m-8">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.941438046584!2d139.71237741532843!3d35.67844393773207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188caf7d44115f%3A0xb244aa5619a8e264!2z5Zu956uL56u25oqA5aC0!5e0!3m2!1sja!2sjp!4v1580707704785!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" class="w-full"></iframe>
+            </div>
+            <!-- // -->
+            <div class="w-auto lg:w-1/2 m-8 p-4 bg-gray-200 border-black border-4 border-solid rounded">
+              <h3 class="text-lg text-center font-bold font-mono border-b-2 border-dashed">Point!</h3>
+              <p class="text-md">国立競技場にて活動しています。<br>
+              とても広々と使えるので、人数によって運動できないということはありません♪</p>
+            </div>
+          </div>
+        </section>
+        <!-- 参加条件 -->
+        <section id="condition" class="container mx-auto my-4">
+          <h2 class="text-2xl text-center font-semibold border-b-2 border-dashed">参加条件</h2>
+          <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col md:flex-row m-8 w-auto lg:w-1/2">
+              <!-- card1 -->
+              <div class="mx-auto w-auto md:w-1/2 rounded border-dotted border-4 border-black">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">バスケ経験者</div>
+                  <p class="text-gray-700 text-base">
+                    試合形式でのゲームをするため、小・中・高・大、もしくは他のクラブでのバスケ経験が必須となります。<br>
+                    ブランクは問いません。経験者さんお待ちしております♪
+                  </p>
+                </div>
+              </div>
+              <!-- card2 -->
+              <div class="mx-auto mt-4 md:mt-0 w-auto md:w-1/2 rounded border-dotted border-4 border-black">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">真剣に楽しめる人</div>
+                    <p class="text-gray-700 text-base">
+                      スポーツにおいて真剣さは特に重要です。<br>
+                      しかし、真剣になりすぎてヒートアップしてしまうのはご法度です。自分に余裕を持って他の人と一緒に楽しめる方を募集しています。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <!-- // -->
+            <div class="w-auto lg:w-1/2 m-8 p-4 bg-gray-200 border-black border-4 border-solid rounded">
+              <h3 class="text-lg text-center font-bold font-mono border-b-2 border-dashed">Point!</h3>
+              <p class="text-md">実はこのクラブに加入している人の大半はこちらのサイトからお問い合わせしてくださった方々です。<br>
+                お一人で加入してくれる方もいるため、常に加入しやすい環境を整えるよう意識しています♪</p>
+            </div>
+          </div>
+        </section>
+        <footer id="form" class="container mx-auto my-4">
+          <h2 class="text-2xl text-center font-semibold border-b-2 border-dashed">お問い合わせ</h2>
+          <form class="m-8 p-4 border-black border-2" action="index.html" method="post">
+            <p>mailadress:</p>
+            <input type="text" name="address" value="" placeholder="your mail" class="w-full border">
+            <br>
+            <p>内容:</p>
+            <textarea name="name" rows="8" cols="80" placeholder="お問い合わせ内容" class="w-full border"></textarea>
+          </form>
+        <footer>
+      </article>
+      <footer class="flex items-center justify-center h-16 bg-gray-600">
+        <p class="text-lg">(c):Riku Inagaki</p>
+      </footer>
+    </main>
+  </body>
+</html>
